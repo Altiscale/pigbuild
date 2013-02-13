@@ -14,6 +14,7 @@ fpm --verbose \
 --maintainer ops@verticloud.com \
 --vendor VertiCloud \
 --provides ${RPM_NAME} \
+--description "${DESCRIPTION}" \
 --replaces vcc-pig_${ARTIFACT_VERSION} \
 -s dir \
 -t rpm \
