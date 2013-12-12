@@ -1,7 +1,7 @@
 #!/bin/sh -ex
-export RPM_VERSION=0.1.0
+ALTISCALE_RELEASE=${ALTISCALE_RELEASE:-0.1.0}
 export RPM_NAME=`echo vcc-pig-${ARTIFACT_VERSION}`
-echo "Building Pig Version RPM ${RPM_NAME} with RPM version ${RPM_VERSION}-${DATE_STRING}"
+echo "Building Pig Version RPM ${RPM_NAME} with RPM version ${ALTISCALE_VERSION}-${DATE_STRING}"
 
 
 export RPM_BUILD_DIR=${INSTALL_DIR}/opt
@@ -19,7 +19,7 @@ fpm --verbose \
 -s dir \
 -t rpm \
 -n ${RPM_NAME} \
--v ${RPM_VERSION} \
+-v ${ALTISCALE_VERSION} \
 --iteration ${DATE_STRING} \
 --rpm-user root \
 --rpm-group root \
