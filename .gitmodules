@@ -1,4 +1,4 @@
 [submodule "pig"]
 	path = pig
 	#url = https://github.com/Altiscale/pig.git@3133b8f5bb0f6e6a4f62f5f776b6b6059c685f9e
-	url = https://github.com/Altiscale/pig.git@pig-repo-for-HD-1208
+	url = https://github.com/Altiscale/pig.git#pig-repo-for-HD-1208
