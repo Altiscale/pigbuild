@@ -1,3 +1,4 @@
 [submodule "pig"]
 	path = pig
 	url = https://github.com/Altiscale/pig.git
+        branch = branch-0.15.0-alti
