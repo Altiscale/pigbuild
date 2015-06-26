@@ -1,6 +1,6 @@
 #!/bin/sh -ex
 ALTISCALE_RELEASE=${ALTISCALE_RELEASE:-0.1.0}
-export RPM_NAME=`echo vcc-pig-${ARTIFACT_VERSION}`
+export RPM_NAME=`echo alti-pig-${ARTIFACT_VERSION}`
 echo "Building Pig Version RPM ${RPM_NAME} with RPM version ${ALTISCALE_VERSION}-${DATE_STRING}"
 
 
@@ -15,7 +15,7 @@ fpm --verbose \
 --vendor VertiCloud \
 --provides ${RPM_NAME} \
 --description "${DESCRIPTION}" \
---replaces vcc-pig_${ARTIFACT_VERSION} \
+--replaces alti-pig_${ARTIFACT_VERSION} \
 -s dir \
 -t rpm \
 -n ${RPM_NAME} \
