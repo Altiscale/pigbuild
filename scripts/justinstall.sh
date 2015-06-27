@@ -18,6 +18,8 @@ fpm --verbose \
 --provides ${RPM_NAME} \
 --description "${RPM_DESCRIPTION}" \
 --replaces alti-pig_${ARTIFACT_VERSION} \
+--url ${GITREPO} \
+--license "Apache License v2" \
 -s dir \
 -t rpm \
 -n ${RPM_NAME} \
